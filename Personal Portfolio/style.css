@@ -1,0 +1,231 @@
+/* Base styles and fonts */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a202c; /* Equivalent to bg-slate-900 */
+    color: #cbd5e0; /* Equivalent to text-gray-300 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global container and spacing */
+.container {
+    max-width: 1280px; /* Equivalent to max-w-7xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section {
+    /* Set a minimum height of 22% of the viewport height */
+    min-height: 22vh;
+    /* Center the content vertically within the section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Header and Navigation */
+.header {
+    background-color: #1e293b; /* Equivalent to bg-slate-800 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.logo {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: #fb923c; /* Equivalent to text-orange-400 */
+}
+
+.logo-image {
+    height: 70px; /* Adjust this value to make the logo smaller or larger */
+    width: auto;
+}
+
+.nav-links {
+    display: none;
+    gap: 2.5rem; /* space-x-10 */
+}
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #cbd5e0;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+.nav-link:hover {
+    color: #fb923c; /* hover:text-orange-400 */
+}
+
+.menu-button {
+    color: #cbd5e0;
+}
+@media (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    background-color: #1e293b;
+    padding: 1rem;
+}
+.mobile-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.mobile-menu a:hover {
+    background-color: #334155; /* hover:bg-gray-700 */
+}
+
+/* Section-specific backgrounds */
+.about-section,
+.contact-section {
+    background-color: #0f172a; /* Equivalent to bg-slate-950 */
+}
+.projects-section {
+    background-color: #1e293b; /* Equivalent to bg-slate-900 */
+}
+
+/* Headings and text */
+.section-title {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 3.75rem;
+    }
+}
+.section-text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #94a3b8; /* text-gray-400 */
+    max-width: 56rem; /* max-w-3xl */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Project cards */
+.projects-grid {
+    display: grid;
+    gap: 2.5rem;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.card {
+    background-color: #1e293b; /* Equivalent to bg-slate-800 */
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transform: scale(1);
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+.card-content {
+    padding: 2rem;
+}
+.card-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #fb923c;
+    margin-bottom: 0.5rem;
+}
+.card-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+.view-project-link {
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #fb923c;
+    font-weight: 600;
+}
+.view-project-link:hover {
+    color: #fdba74;
+}
+
+/* Contact and social links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.social-link {
+    color: #fb923c;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+.social-link:hover {
+    color: #fdba74;
+}
+
+/* New rule to fix logo size */
+.social-link svg {
+    height: 40px;
+    width: 40px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinath Portfolio</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <header class="header">
+        <nav class="container nav">
+            <a href="#" class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYUpMZBfBKSU73GM6oH5GQeE9i-sAm3gWIw&s" alt="Srinath's Logo" class="logo-image">
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="menu-button" class="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="#about" class="block">About</a>
+            <a href="#projects" class="block">Projects</a>
+            <a href="#contact" class="block">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about-section">
+            <div class="container text-center">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-text">
+                    Hello! I'm a passionate and motivated web developer with a keen eye for design and a strong foundation in modern technologies. I specialize in building responsive and dynamic web applications. I'm excited to apply my skills to create impactful and user-friendly digital experiences.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title text-center mb-16">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzL3aPhB3JFhGpxSaH-7vqtPaK8lfGp7btPA&s" alt="To-Do App" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Project 1: To-Do List</h3>
+                            <p class="card-text">A clean and intuitive task manager designed to boost productivity. This application allows users to add, mark as complete, and delete tasks, with all data saved directly in the browser's local storage for a seamless experience.</p>
+                            <a href="To-Do App/index.html" class="view-project-link">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaBeucIy1VXr9gMK267WhTcC9MzaMwpLNzCQ&s" alt="Product Page" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Project 2: Dynamic Product Showcase</h3>
+                            <p class="card-text">An interactive e-commerce product page built to showcase filtering and sorting functionality. This project demonstrates my ability to handle and display data dynamically, allowing users to find products by price and category with a smooth, responsive interface.</p>
+                            <a href="Product Page/index.html" class="view-project-link">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Hidden for a clean 2-column layout. Uncomment to display. -->
+                    <div class="card hidden">
+                        <img src="https://placehold.co/600x400/374151/FDBA74?text=Project+3" alt="Project 3" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Project 3: Something Else</h3>
+                            <p class="card-text">A description of a third project, waiting to be unveiled. This placeholder ensures the layout looks good.</p>
+                            <a href="#" class="view-project-link">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container text-center">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-text">
+                    I'm currently seeking new opportunities. Feel free to reach out to me via email or connect with me on social media.
+                </p>
+                <div class="social-links">
+    <a href="mailto:your.email@example.com" class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M2.003 5.884L10.02 12l-8.017 6.116zm20 0l-8.017 6.116l8.017 6.116zM12.016 13.5l8.017-6.116L12.016 1.884l-8.017 6.116z"/>
+        </svg>
+    </a>
+    <a href="#" class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.611 0-1.1-.498-1.1-1.109s.489-1.109 1.1-1.109h.001c.611 0 1.1.498 1.1 1.109s-.489 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.202-.016-2.748-1.676-2.748-1.676 0-1.933 1.306-1.933 2.664v2.945h-1.998v-6h1.921v.879h.027c.269-.425.922-1.047 1.897-1.047 2.029 0 2.405 1.332 2.405 3.064v3.104z"/>
+        </svg>
+    </a>
+</div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container text-center text-sm">
+            <p>&copy; 2025 Srinath. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
